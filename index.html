@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">EwEb</a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+      <nav class="navigation">
+        <a href="#" style="--i: 0">Home</a>
+        <a href="#" style="--i: 1">About</a>
+        <a href="#" style="--i: 2">Gallery</a>
+        <a href="#" style="--i: 3">Services</a>
+        <a href="#" style="--i: 4">Contact</a>
+        <button class="btnLogin-popup">Login</button>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <input type="password" required />
+            <label for="password">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn" onclick="submitForm()">
+            Login
+          </button>
+          <div class="login-register">
+            <p>
+              Don't have an account?<a href="#" class="register-link">
+                Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"
+              ><ion-icon name="person-outline"></ion-icon
+            ></span>
+            <input type="text" required />
+            <label for="user">Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"
+              ><ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <input type="password" required />
+            <label for="password">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label
+              ><input type="checkbox" />I agree to the terms & conditions</label
+            >
+          </div>
+          <button type="submit" class="btn" onclick="submitForm()">
+            Register
+          </button>
+          <div class="login-register">
+            <p>
+              Already have an account?<a href="#" class="login-link"> Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- <video
+      aria-hidden="true"
+      class="relative z-20 h-full w-full object-cover transition-opacity duration-300 pointer visible opacity-100"
+      autoplay=""
+      loop=""
+      playsinline=""
+    >
+      <source
+        src="https://openaicomproductionae4b.blob.core.windows.net/production-twill-01/121dd5e0-eaea-424d-bdf2-db02ca1f5e55/gpt-4-92586ac_1080p60.mp4"
+        type="video/mp4"
+      />
+      <font style="vertical-align: inherit"
+        ><font style="vertical-align: inherit"
+          >Brauzeringiz video tegini qo'llab-quvvatlamaydi.</font
+        ></font
+      >
+    </video> -->
+
+    <script src="./js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
